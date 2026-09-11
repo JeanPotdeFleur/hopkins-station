@@ -1,16 +1,41 @@
 {
-  "generated_utc": "2026-09-11T23:16:44Z",
+  "generated_utc": "2026-09-11T23:19:10Z",
   "health": {
     "verdict": "fault",
     "faults": [
       "no burst in the last 36 hours"
     ],
     "notes": [
-      "2 journal anomalies in 24 hours",
-      "no morning capture this cycle"
+      "2 journal anomalies in 24 hours"
     ]
   },
-  "morning": {},
+  "morning": {
+    "captured_utc": "2026-09-11T23:19:10Z",
+    "cameras": [
+      {
+        "serial": "24260192",
+        "frames": 51,
+        "missed": 0,
+        "exposure_us": 14997.0,
+        "gain_db": 17.9
+      },
+      {
+        "serial": "24260193",
+        "frames": 51,
+        "missed": 0,
+        "exposure_us": 14997.0,
+        "gain_db": 17.9
+      }
+    ],
+    "radiometry": {
+      "sat_pct": 0.0,
+      "p50": 0,
+      "p999": 2,
+      "pmax": 29
+    },
+    "exposure_us": 14997.0,
+    "gain_db": 17.9
+  },
   "plan": {
     "source": "default",
     "date": "2026-09-11",
@@ -26,9 +51,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 46.9,
+    "soc_temp_c": 49.6,
     "throttled": "0x0",
-    "uptime": "up 20 minutes",
+    "uptime": "up 22 minutes",
     "pps_pulsing": true
   },
   "storage": [
