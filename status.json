@@ -1,0 +1,116 @@
+{
+  "generated_utc": "2026-09-11T23:16:44Z",
+  "health": {
+    "verdict": "fault",
+    "faults": [
+      "no burst in the last 36 hours"
+    ],
+    "notes": [
+      "2 journal anomalies in 24 hours",
+      "no morning capture this cycle"
+    ]
+  },
+  "morning": {},
+  "plan": {
+    "source": "default",
+    "date": "2026-09-11",
+    "bursts": 2,
+    "slots": [
+      "1000",
+      "1700"
+    ],
+    "exposure_us": null,
+    "reason": "plan dated 2026-01-01, not 2026-09-11",
+    "resolved_utc": "2026-09-11T23:15:49Z"
+  },
+  "station": {
+    "clock_synchronised": true,
+    "governor": "performance",
+    "soc_temp_c": 46.9,
+    "throttled": "0x0",
+    "uptime": "up 20 minutes",
+    "pps_pulsing": true
+  },
+  "storage": [
+    {
+      "mount": "/mnt/vault",
+      "free_gb": 7581.0,
+      "used_pct": 5
+    },
+    {
+      "mount": "/mnt/vault2",
+      "free_gb": 7920.2,
+      "used_pct": 1
+    }
+  ],
+  "bursts": [
+    {
+      "id": "2026-09-02T22-53-19Z",
+      "volume": "/mnt/vault2",
+      "completed": true,
+      "frames": 120,
+      "target": 120,
+      "lost": 0,
+      "mbps": 63.2501,
+      "ended_utc": "2026-09-02T22:54:21Z"
+    },
+    {
+      "id": "2026-09-02T22-52-06Z",
+      "volume": "/mnt/vault2",
+      "completed": true,
+      "frames": 120,
+      "target": 120,
+      "lost": 0,
+      "mbps": 63.5007,
+      "ended_utc": "2026-09-02T22:53:08Z"
+    },
+    {
+      "id": "2026-09-02T22-50-53Z",
+      "volume": "/mnt/vault2",
+      "completed": true,
+      "frames": 120,
+      "target": 120,
+      "lost": 0,
+      "mbps": 63.0516,
+      "ended_utc": "2026-09-02T22:51:55Z"
+    },
+    {
+      "id": "2026-09-02T22-49-40Z",
+      "volume": "/mnt/vault2",
+      "completed": true,
+      "frames": 120,
+      "target": 120,
+      "lost": 0,
+      "mbps": 63.2239,
+      "ended_utc": "2026-09-02T22:50:42Z"
+    },
+    {
+      "id": "2026-09-02T22-43-54Z",
+      "volume": "/mnt/vault2",
+      "completed": true,
+      "frames": 40,
+      "target": 40,
+      "lost": 0,
+      "mbps": 60.0135,
+      "ended_utc": "2026-09-02T22:44:16Z"
+    },
+    {
+      "id": "2026-09-01T16-20-45Z",
+      "volume": "/mnt/vault",
+      "completed": true,
+      "frames": 240,
+      "target": 240,
+      "lost": 0,
+      "mbps": 63.7561,
+      "ended_utc": "2026-09-01T16:22:47Z"
+    }
+  ],
+  "verify": [
+    "[PASS] 2026-08-25T18-22-01Z  10800/10800 frames  ring 1/60  64.5 MB/s  0b655b7",
+    "[PASS] 2026-09-01T16-20-45Z  240/240 frames  ring 1/60  63.8 MB/s  7802967",
+    "",
+    "2/2 burst(s) passed"
+  ],
+  "journal_anomalies_24h": 2,
+  "timers": []
+}
