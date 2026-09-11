@@ -27,16 +27,17 @@
   a{color:var(--tide)}
   a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
 
-  figure{margin:0;position:relative;background:var(--slate)}
-  figure img{display:block;width:100%;height:auto;opacity:0;transition:opacity .5s ease}
-  figure img.in{opacity:1}
-  @media (prefers-reduced-motion:reduce){figure img{transition:none}}
-  .verdict{
-    position:absolute;left:0;right:0;bottom:0;
-    padding:.6rem 1.1rem;background:rgba(14,36,43,.88);
-    backdrop-filter:blur(6px);border-top:1px solid var(--line);
-    display:flex;gap:.9rem;align-items:baseline;flex-wrap:wrap;
-  }
+  figure{margin:0;background:var(--slate);border-bottom:1px solid var(--line)}
+  .shot{aspect-ratio:3/1;max-height:58vh;overflow:hidden;
+        display:flex;align-items:center;justify-content:center}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block;
+            opacity:0;transition:opacity .5s ease}
+  .shot img.in{opacity:1}
+  .shot p{margin:0;padding:0 1.2rem;color:var(--kelp);text-align:center;
+          font-size:.95rem;max-width:26rem}
+  @media (prefers-reduced-motion:reduce){.shot img{transition:none}}
+  .verdict{padding:.75rem 1.1rem;border-top:1px solid var(--line);
+           display:flex;gap:.9rem;align-items:baseline;flex-wrap:wrap}
   .dot{width:.62rem;height:.62rem;border-radius:50%;flex:0 0 auto;
        background:var(--tide);transform:translateY(-.1rem)}
   .attention .dot{background:var(--brass)} .fault .dot{background:var(--brick)}
@@ -76,7 +77,11 @@
 <body>
 
 <figure>
-  <img id="shot" alt="Most recent morning view from the station">
+  <div class="shot">
+    <img id="shot" alt="Most recent morning view from the station">
+    <p id="noshot" hidden>No morning image published yet. The station takes the
+    first one at 08:00.</p>
+  </div>
   <figcaption class="verdict" id="verdict">
     <span class="dot"></span><b id="vtext">Loading</b><span id="vwhen"></span>
   </figcaption>
@@ -118,6 +123,10 @@ document.getElementById("edit").onclick = () => window.open(EDIT, "_blank");
 const q = "?t=" + Date.now();
 const img = document.getElementById("shot");
 img.onload = () => img.classList.add("in");
+img.onerror = () => {
+  img.hidden = true;
+  document.getElementById("noshot").hidden = false;
+};
 img.src = "latest.jpg" + q;
 
 const pad = n => String(n).padStart(2, "0");
@@ -211,9 +220,11 @@ fetch("status.json" + q).then(r => r.json()).then(s => {
 }).catch(() => {
   const box = document.getElementById("verdict");
   box.className = "verdict fault";
-  document.getElementById("vtext").textContent = "Cannot read the station's report";
+  document.getElementById("vtext").textContent = "No report from the station yet";
   document.getElementById("vwhen").textContent =
-    "status.json is missing or malformed in this repository.";
+    "status.json has not been published here. It appears after the first "
+    + "morning cycle.";
+  document.getElementById("planline").textContent = "Schedule not known yet";
 });
 </script>
 </body>
