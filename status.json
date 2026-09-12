@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T20:27:44Z",
+  "generated_utc": "2026-09-12T20:29:23Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -23,14 +23,14 @@
     "exposure_us": null,
     "reason": "accepted, dated by committed date",
     "note": "",
-    "resolved_utc": "2026-09-12T20:24:28Z"
+    "resolved_utc": "2026-09-12T20:29:23Z"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 47.4,
+    "soc_temp_c": 48.5,
     "throttled": "0x0",
-    "uptime": "up 2 hours, 7 minutes",
+    "uptime": "up 2 hours, 8 minutes",
     "pps_pulsing": true
   },
   "storage": [
