@@ -282,6 +282,10 @@ function maybeRender() {
   const lineEl = document.getElementById("planline");
   const whyEl = document.getElementById("planwhy");
   const noteEl = document.getElementById("plannote");
+  // Cleared on every pass: maybeRender runs once when the status arrives and
+  // again when the plan does, and a note revealed by the first would otherwise
+  // survive a second that has none.
+  noteEl.hidden = true; noteEl.textContent = "";
   const showNote = t => { if (t) { noteEl.textContent = "\u201c" + t + "\u201d";
                                    noteEl.hidden = false; } };
 
