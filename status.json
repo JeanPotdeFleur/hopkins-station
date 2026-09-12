@@ -1,66 +1,43 @@
 {
-  "generated_utc": "2026-09-12T15:00:37Z",
+  "generated_utc": "2026-09-12T20:27:44Z",
   "health": {
     "verdict": "fault",
     "faults": [
       "no burst in the last 36 hours"
     ],
     "notes": [
-      "2 journal anomalies in 24 hours"
+      "1 journal anomalies in 24 hours",
+      "no morning capture this cycle"
     ]
   },
-  "morning": {
-    "captured_utc": "2026-09-12T15:00:37Z",
-    "cameras": [
-      {
-        "serial": "24260192",
-        "frames": 52,
-        "missed": 0,
-        "exposure_us": 14997.0,
-        "gain_db": 17.9
-      },
-      {
-        "serial": "24260193",
-        "frames": 52,
-        "missed": 0,
-        "exposure_us": 14997.0,
-        "gain_db": 17.9
-      }
-    ],
-    "radiometry": {
-      "sat_pct": 0.0,
-      "p50": 0,
-      "p999": 2,
-      "pmax": 25
-    },
-    "exposure_us": 14997.0,
-    "gain_db": 17.9
-  },
+  "morning": {},
   "plan": {
-    "source": "default",
-    "date": "2026-09-11",
+    "source": "plan",
+    "date": "2026-09-12",
+    "date_from": "committed",
     "bursts": 2,
     "slots": [
       "1000",
       "1700"
     ],
     "exposure_us": null,
-    "reason": "plan dated 2026-01-01, not 2026-09-11",
-    "resolved_utc": "2026-09-11T23:15:49Z"
+    "reason": "accepted, dated by committed date",
+    "note": "",
+    "resolved_utc": "2026-09-12T20:24:28Z"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 49.0,
+    "soc_temp_c": 47.4,
     "throttled": "0x0",
-    "uptime": "up 16 hours, 4 minutes",
+    "uptime": "up 2 hours, 7 minutes",
     "pps_pulsing": true
   },
   "storage": [
     {
       "mount": "/mnt/vault",
-      "free_gb": 6930.5,
-      "used_pct": 13
+      "free_gb": 7581.0,
+      "used_pct": 5
     },
     {
       "mount": "/mnt/vault2",
@@ -136,11 +113,9 @@
     "",
     "2/2 burst(s) passed"
   ],
-  "journal_anomalies_24h": 2,
+  "journal_anomalies_24h": 1,
   "timers": [
-    "Sat 2026-09-12 16:50:00 UTC 1h 49min -                                      - hydro-plan.timer      hydro-plan.service",
-    "Sun 2026-09-13 00:00:00 UTC       8h Sat 2026-09-12 13:40:00 UTC 1h 20min ago hydro-a2soak-sw.timer hydro-a2soak@software.service",
-    "Sun 2026-09-13 00:10:00 UTC       9h Sat 2026-09-12 13:50:00 UTC 1h 10min ago hydro-a2soak-hw.timer hydro-a2soak@line2.service",
-    "-                                  - Sat 2026-09-12 15:00:02 UTC      37s ago hydro-morning.timer   hydro-morning.service"
+    "Sun 2026-09-13 15:00:00 UTC  18h -         - hydro-morning.timer hydro-morning.service",
+    "Sun 2026-09-13 16:50:00 UTC  20h -         - hydro-plan.timer    hydro-plan.service"
   ]
 }
