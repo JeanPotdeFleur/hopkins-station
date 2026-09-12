@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T21:10:43Z",
+  "generated_utc": "2026-09-12T21:21:31Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -12,23 +12,31 @@
   },
   "morning": {},
   "plan": {
-    "source": "default",
+    "source": "plan",
     "date": "2026-09-12",
-    "bursts": 2,
+    "date_from": "committed",
+    "bursts": 3,
     "slots": [
       "1000",
+      "1300",
       "1700"
     ],
     "exposure_us": null,
-    "reason": "no plan set for today",
-    "resolved_utc": "2026-09-12T21:10:43Z"
+    "reason": "accepted, dated by committed date",
+    "note": "test note like: oulala nice tide today let's do 3 bursts",
+    "resolved_utc": "2026-09-12T21:21:28Z"
+  },
+  "settings": {
+    "exposure_us": 5000,
+    "gain_db": "0",
+    "trigger": "line2"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 49.0,
+    "soc_temp_c": 48.0,
     "throttled": "0x0",
-    "uptime": "up 2 hours, 50 minutes",
+    "uptime": "up 3 hours, 0 minutes",
     "pps_pulsing": true
   },
   "storage": [
