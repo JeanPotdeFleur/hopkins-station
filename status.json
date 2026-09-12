@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T20:29:23Z",
+  "generated_utc": "2026-09-12T20:57:56Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -12,25 +12,23 @@
   },
   "morning": {},
   "plan": {
-    "source": "plan",
+    "source": "default",
     "date": "2026-09-12",
-    "date_from": "committed",
     "bursts": 2,
     "slots": [
       "1000",
       "1700"
     ],
     "exposure_us": null,
-    "reason": "accepted, dated by committed date",
-    "note": "",
-    "resolved_utc": "2026-09-12T20:29:23Z"
+    "reason": "no plan set for today",
+    "resolved_utc": "2026-09-12T20:57:56Z"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 48.5,
+    "soc_temp_c": 46.3,
     "throttled": "0x0",
-    "uptime": "up 2 hours, 8 minutes",
+    "uptime": "up 2 hours, 37 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -49,6 +47,8 @@
     {
       "id": "2026-09-02T22-53-19Z",
       "volume": "/mnt/vault2",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 120,
       "target": 120,
@@ -59,6 +59,8 @@
     {
       "id": "2026-09-02T22-52-06Z",
       "volume": "/mnt/vault2",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 120,
       "target": 120,
@@ -69,6 +71,8 @@
     {
       "id": "2026-09-02T22-50-53Z",
       "volume": "/mnt/vault2",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 120,
       "target": 120,
@@ -79,6 +83,8 @@
     {
       "id": "2026-09-02T22-49-40Z",
       "volume": "/mnt/vault2",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 120,
       "target": 120,
@@ -89,6 +95,8 @@
     {
       "id": "2026-09-02T22-43-54Z",
       "volume": "/mnt/vault2",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 40,
       "target": 40,
@@ -99,6 +107,8 @@
     {
       "id": "2026-09-01T16-20-45Z",
       "volume": "/mnt/vault",
+      "note": "",
+      "slot": null,
       "completed": true,
       "frames": 240,
       "target": 240,
@@ -116,6 +126,6 @@
   "journal_anomalies_24h": 1,
   "timers": [
     "Sun 2026-09-13 15:00:00 UTC  18h -         - hydro-morning.timer hydro-morning.service",
-    "Sun 2026-09-13 16:50:00 UTC  20h -         - hydro-plan.timer    hydro-plan.service"
+    "Sun 2026-09-13 16:50:00 UTC  19h -         - hydro-plan.timer    hydro-plan.service"
   ]
 }
