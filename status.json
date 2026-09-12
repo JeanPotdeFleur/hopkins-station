@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T20:57:56Z",
+  "generated_utc": "2026-09-12T20:58:01Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -26,7 +26,7 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 46.3,
+    "soc_temp_c": 47.4,
     "throttled": "0x0",
     "uptime": "up 2 hours, 37 minutes",
     "pps_pulsing": true
