@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T20:58:01Z",
+  "generated_utc": "2026-09-12T21:01:53Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -12,23 +12,26 @@
   },
   "morning": {},
   "plan": {
-    "source": "default",
+    "source": "plan",
     "date": "2026-09-12",
-    "bursts": 2,
+    "date_from": "committed",
+    "bursts": 3,
     "slots": [
       "1000",
+      "1300",
       "1700"
     ],
     "exposure_us": null,
-    "reason": "no plan set for today",
-    "resolved_utc": "2026-09-12T20:57:56Z"
+    "reason": "accepted, dated by committed date",
+    "note": "yoooooooo test",
+    "resolved_utc": "2026-09-12T21:01:50Z"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 47.4,
+    "soc_temp_c": 49.0,
     "throttled": "0x0",
-    "uptime": "up 2 hours, 37 minutes",
+    "uptime": "up 2 hours, 41 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -125,7 +128,7 @@
   ],
   "journal_anomalies_24h": 1,
   "timers": [
-    "Sun 2026-09-13 15:00:00 UTC  18h -         - hydro-morning.timer hydro-morning.service",
+    "Sun 2026-09-13 15:00:00 UTC  17h -         - hydro-morning.timer hydro-morning.service",
     "Sun 2026-09-13 16:50:00 UTC  19h -         - hydro-plan.timer    hydro-plan.service"
   ]
 }
