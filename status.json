@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-11T23:19:10Z",
+  "generated_utc": "2026-09-12T15:00:37Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -10,18 +10,18 @@
     ]
   },
   "morning": {
-    "captured_utc": "2026-09-11T23:19:10Z",
+    "captured_utc": "2026-09-12T15:00:37Z",
     "cameras": [
       {
         "serial": "24260192",
-        "frames": 51,
+        "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
         "gain_db": 17.9
       },
       {
         "serial": "24260193",
-        "frames": 51,
+        "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
         "gain_db": 17.9
@@ -31,7 +31,7 @@
       "sat_pct": 0.0,
       "p50": 0,
       "p999": 2,
-      "pmax": 29
+      "pmax": 25
     },
     "exposure_us": 14997.0,
     "gain_db": 17.9
@@ -51,16 +51,16 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 49.6,
+    "soc_temp_c": 49.0,
     "throttled": "0x0",
-    "uptime": "up 22 minutes",
+    "uptime": "up 16 hours, 4 minutes",
     "pps_pulsing": true
   },
   "storage": [
     {
       "mount": "/mnt/vault",
-      "free_gb": 7581.0,
-      "used_pct": 5
+      "free_gb": 6930.5,
+      "used_pct": 13
     },
     {
       "mount": "/mnt/vault2",
@@ -137,5 +137,10 @@
     "2/2 burst(s) passed"
   ],
   "journal_anomalies_24h": 2,
-  "timers": []
+  "timers": [
+    "Sat 2026-09-12 16:50:00 UTC 1h 49min -                                      - hydro-plan.timer      hydro-plan.service",
+    "Sun 2026-09-13 00:00:00 UTC       8h Sat 2026-09-12 13:40:00 UTC 1h 20min ago hydro-a2soak-sw.timer hydro-a2soak@software.service",
+    "Sun 2026-09-13 00:10:00 UTC       9h Sat 2026-09-12 13:50:00 UTC 1h 10min ago hydro-a2soak-hw.timer hydro-a2soak@line2.service",
+    "-                                  - Sat 2026-09-12 15:00:02 UTC      37s ago hydro-morning.timer   hydro-morning.service"
+  ]
 }
