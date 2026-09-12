@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T21:21:31Z",
+  "generated_utc": "2026-09-12T21:21:50Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -27,16 +27,16 @@
     "resolved_utc": "2026-09-12T21:21:28Z"
   },
   "settings": {
-    "exposure_us": 5000,
-    "gain_db": "0",
-    "trigger": "line2"
+    "exposure_us": null,
+    "gain_db": null,
+    "trigger": null
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 48.0,
+    "soc_temp_c": 45.8,
     "throttled": "0x0",
-    "uptime": "up 3 hours, 0 minutes",
+    "uptime": "up 3 hours, 1 minute",
     "pps_pulsing": true
   },
   "storage": [
