@@ -1,25 +1,38 @@
 {
-  "generated_utc": "2026-09-15T23:26:35Z",
+  "generated_utc": "2026-09-15T23:30:53Z",
   "health": {
-    "verdict": "attention",
-    "faults": [],
+    "verdict": "fault",
+    "faults": [
+      "no burst in the last 36 hours"
+    ],
     "notes": [
       "no morning capture this cycle"
     ]
   },
   "morning": {},
-  "plan": {},
-  "settings": {
+  "plan": {
+    "source": "default",
+    "date": "2026-09-15",
+    "bursts": 2,
+    "slots": [
+      "1000",
+      "1700"
+    ],
     "exposure_us": null,
-    "gain_db": null,
-    "trigger": null
+    "reason": "no plan set for today",
+    "resolved_utc": "2026-09-15T23:30:53Z"
+  },
+  "settings": {
+    "exposure_us": 6000,
+    "gain_db": "0",
+    "trigger": "line2"
   },
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 45.8,
+    "soc_temp_c": 48.5,
     "throttled": "0x0",
-    "uptime": "up 1 hour, 43 minutes",
+    "uptime": "up 1 hour, 48 minutes",
     "pps_pulsing": true
   },
   "storage": [
