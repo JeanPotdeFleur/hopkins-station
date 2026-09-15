@@ -1,31 +1,14 @@
 {
-  "generated_utc": "2026-09-12T21:21:50Z",
+  "generated_utc": "2026-09-15T23:26:35Z",
   "health": {
-    "verdict": "fault",
-    "faults": [
-      "no burst in the last 36 hours"
-    ],
+    "verdict": "attention",
+    "faults": [],
     "notes": [
-      "1 journal anomalies in 24 hours",
       "no morning capture this cycle"
     ]
   },
   "morning": {},
-  "plan": {
-    "source": "plan",
-    "date": "2026-09-12",
-    "date_from": "committed",
-    "bursts": 3,
-    "slots": [
-      "1000",
-      "1300",
-      "1700"
-    ],
-    "exposure_us": null,
-    "reason": "accepted, dated by committed date",
-    "note": "test note like: oulala nice tide today let's do 3 bursts",
-    "resolved_utc": "2026-09-12T21:21:28Z"
-  },
+  "plan": {},
   "settings": {
     "exposure_us": null,
     "gain_db": null,
@@ -36,7 +19,7 @@
     "governor": "performance",
     "soc_temp_c": 45.8,
     "throttled": "0x0",
-    "uptime": "up 3 hours, 1 minute",
+    "uptime": "up 1 hour, 43 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -131,9 +114,9 @@
     "",
     "2/2 burst(s) passed"
   ],
-  "journal_anomalies_24h": 1,
+  "journal_anomalies_24h": 0,
   "timers": [
-    "Sun 2026-09-13 15:00:00 UTC  17h -         - hydro-morning.timer hydro-morning.service",
-    "Sun 2026-09-13 16:50:00 UTC  19h -         - hydro-plan.timer    hydro-plan.service"
+    "Wed 2026-09-16 15:00:00 UTC  15h -         - hydro-morning.timer hydro-morning.service",
+    "Wed 2026-09-16 16:50:00 UTC  17h -         - hydro-plan.timer    hydro-plan.service"
   ]
 }
