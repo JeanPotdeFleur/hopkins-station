@@ -1,8 +1,10 @@
 {
-  "generated_utc": "2026-09-17T15:00:59Z",
+  "generated_utc": "2026-09-17T16:50:07Z",
   "health": {
-    "verdict": "nominal",
-    "faults": [],
+    "verdict": "fault",
+    "faults": [
+      "no burst in the last 36 hours"
+    ],
     "notes": []
   },
   "morning": {
@@ -32,7 +34,18 @@
     "exposure_us": 3537.0,
     "gain_db": 0.0
   },
-  "plan": {},
+  "plan": {
+    "source": "default",
+    "date": "2026-09-17",
+    "bursts": 2,
+    "slots": [
+      "1000",
+      "1700"
+    ],
+    "exposure_us": null,
+    "reason": "no plan set for today",
+    "resolved_utc": "2026-09-17T16:50:07Z"
+  },
   "settings": {
     "exposure_us": 6000,
     "gain_db": "0",
@@ -41,9 +54,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 36.4,
+    "soc_temp_c": 38.0,
     "throttled": "0x0",
-    "uptime": "up 18 hours, 40 minutes",
+    "uptime": "up 20 hours, 29 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -140,7 +153,7 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Thu 2026-09-17 16:50:00 UTC 1h 48min -                                 - hydro-plan.timer    hydro-plan.service",
-    "-                                  - Thu 2026-09-17 15:00:23 UTC 37s ago hydro-morning.timer hydro-morning.service"
+    "Fri 2026-09-18 15:00:00 UTC  22h Thu 2026-09-17 15:00:23 UTC 1h 49min ago hydro-morning.timer hydro-morning.service",
+    "-                              - Thu 2026-09-17 16:50:06 UTC       3s ago hydro-plan.timer    hydro-plan.service"
   ]
 }
