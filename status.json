@@ -1,27 +1,38 @@
 {
-  "generated_utc": "2026-09-15T23:33:27Z",
+  "generated_utc": "2026-09-17T15:00:59Z",
   "health": {
-    "verdict": "fault",
-    "faults": [
-      "no burst in the last 36 hours"
-    ],
-    "notes": [
-      "no morning capture this cycle"
-    ]
+    "verdict": "nominal",
+    "faults": [],
+    "notes": []
   },
-  "morning": {},
-  "plan": {
-    "source": "default",
-    "date": "2026-09-15",
-    "bursts": 2,
-    "slots": [
-      "1000",
-      "1700"
+  "morning": {
+    "captured_utc": "2026-09-17T15:00:59Z",
+    "cameras": [
+      {
+        "serial": "24260192",
+        "frames": 52,
+        "missed": 0,
+        "exposure_us": 3537.0,
+        "gain_db": 0.0
+      },
+      {
+        "serial": "24260193",
+        "frames": 52,
+        "missed": 0,
+        "exposure_us": 860.0,
+        "gain_db": 0.0
+      }
     ],
-    "exposure_us": null,
-    "reason": "no plan set for today",
-    "resolved_utc": "2026-09-15T23:30:53Z"
+    "radiometry": {
+      "sat_pct": 0.0,
+      "p50": 110,
+      "p999": 197,
+      "pmax": 212
+    },
+    "exposure_us": 3537.0,
+    "gain_db": 0.0
   },
+  "plan": {},
   "settings": {
     "exposure_us": 6000,
     "gain_db": "0",
@@ -30,9 +41,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 48.5,
+    "soc_temp_c": 36.4,
     "throttled": "0x0",
-    "uptime": "up 1 hour, 50 minutes",
+    "uptime": "up 18 hours, 40 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -43,8 +54,8 @@
     },
     {
       "mount": "/mnt/vault2",
-      "free_gb": 7920.2,
-      "used_pct": 1
+      "free_gb": 7816.8,
+      "used_pct": 2
     }
   ],
   "bursts": [
@@ -122,14 +133,14 @@
     }
   ],
   "verify": [
-    "[PASS] 2026-08-25T18-22-01Z  10800/10800 frames  ring 1/60  64.5 MB/s  0b655b7",
-    "[PASS] 2026-09-01T16-20-45Z  240/240 frames  ring 1/60  63.8 MB/s  7802967",
+    "[PASS] 2026-09-02T22-52-06Z  120/120 frames  ring 1/60  63.5 MB/s  5a3190d",
+    "[PASS] 2026-09-02T22-53-19Z  120/120 frames  ring 1/60  63.3 MB/s  5a3190d",
     "",
-    "2/2 burst(s) passed"
+    "7/7 burst(s) passed"
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Wed 2026-09-16 15:00:00 UTC  15h -         - hydro-morning.timer hydro-morning.service",
-    "Wed 2026-09-16 16:50:00 UTC  17h -         - hydro-plan.timer    hydro-plan.service"
+    "Thu 2026-09-17 16:50:00 UTC 1h 48min -                                 - hydro-plan.timer    hydro-plan.service",
+    "-                                  - Thu 2026-09-17 15:00:23 UTC 37s ago hydro-morning.timer hydro-morning.service"
   ]
 }
