@@ -1,36 +1,36 @@
 {
-  "generated_utc": "2026-09-22T16:50:09Z",
+  "generated_utc": "2026-09-23T15:01:03Z",
   "health": {
     "verdict": "nominal",
     "faults": [],
     "notes": []
   },
   "morning": {
-    "captured_utc": "2026-09-22T15:00:44Z",
+    "captured_utc": "2026-09-23T15:01:03Z",
     "cameras": [
       {
         "serial": "24260192",
         "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
-        "gain_db": 11.4
+        "gain_db": 11.8
       },
       {
         "serial": "24260193",
         "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
-        "gain_db": 9.6
+        "gain_db": 10.2
       }
     ],
     "radiometry": {
-      "sat_pct": 2.15,
-      "p50": 83,
-      "p999": 255,
+      "sat_pct": 0.03,
+      "p50": 117,
+      "p999": 250,
       "pmax": 255
     },
     "exposure_us": 14997.0,
-    "gain_db": 11.4
+    "gain_db": 11.8
   },
   "plan": {
     "source": "default",
@@ -52,24 +52,48 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 29.8,
+    "soc_temp_c": 28.1,
     "throttled": "0x0",
-    "uptime": "up 3 days, 15 hours, 27 minutes",
+    "uptime": "up 4 days, 13 hours, 38 minutes",
     "pps_pulsing": true
   },
   "storage": [
     {
       "mount": "/mnt/vault",
-      "free_gb": 6961.5,
-      "used_pct": 13
+      "free_gb": 6806.6,
+      "used_pct": 15
     },
     {
       "mount": "/mnt/vault2",
-      "free_gb": 6839.7,
-      "used_pct": 14
+      "free_gb": 6684.8,
+      "used_pct": 16
     }
   ],
   "bursts": [
+    {
+      "id": "2026-09-23T00-00-06Z",
+      "volume": "/mnt/vault2",
+      "note": "",
+      "slot": "1700",
+      "completed": true,
+      "frames": 4800,
+      "target": 4800,
+      "lost": 0,
+      "mbps": 64.4946,
+      "ended_utc": "2026-09-23T00:40:08Z"
+    },
+    {
+      "id": "2026-09-22T17-00-06Z",
+      "volume": "/mnt/vault",
+      "note": "",
+      "slot": "1000",
+      "completed": true,
+      "frames": 4800,
+      "target": 4800,
+      "lost": 0,
+      "mbps": 64.4933,
+      "ended_utc": "2026-09-22T17:40:08Z"
+    },
     {
       "id": "2026-09-22T00-00-06Z",
       "volume": "/mnt/vault2",
@@ -117,43 +141,19 @@
       "lost": 0,
       "mbps": 64.492,
       "ended_utc": "2026-09-20T17:40:08Z"
-    },
-    {
-      "id": "2026-09-20T00-00-07Z",
-      "volume": "/mnt/vault2",
-      "note": "",
-      "slot": "1700",
-      "completed": true,
-      "frames": 4800,
-      "target": 4800,
-      "lost": 0,
-      "mbps": 64.4993,
-      "ended_utc": "2026-09-20T00:40:08Z"
-    },
-    {
-      "id": "2026-09-19T17-00-06Z",
-      "volume": "/mnt/vault",
-      "note": "",
-      "slot": "1000",
-      "completed": true,
-      "frames": 4800,
-      "target": 4800,
-      "lost": 0,
-      "mbps": 64.4917,
-      "ended_utc": "2026-09-19T17:40:08Z"
     }
   ],
   "verify": [
-    "[PASS] 2026-09-21T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
     "[PASS] 2026-09-22T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
+    "[PASS] 2026-09-23T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
     "",
-    "15/15 burst(s) passed"
+    "17/17 burst(s) passed"
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Tue 2026-09-22 17:00:00 UTC 9min Mon 2026-09-21 17:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Wed 2026-09-23 00:00:00 UTC   7h Tue 2026-09-22 00:00:00 UTC      16h ago hydro-burst-1700.timer hydro-slot@1700.service",
-    "Wed 2026-09-23 15:00:00 UTC  22h Tue 2026-09-22 15:00:09 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
-    "-                              - Tue 2026-09-22 16:50:07 UTC       3s ago hydro-plan.timer       hydro-plan.service"
+    "Wed 2026-09-23 16:50:00 UTC 1h 48min Tue 2026-09-22 16:50:07 UTC 22h ago hydro-plan.timer       hydro-plan.service",
+    "Wed 2026-09-23 17:00:00 UTC 1h 58min Tue 2026-09-22 17:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Thu 2026-09-24 00:00:00 UTC       8h Wed 2026-09-23 00:00:00 UTC 15h ago hydro-burst-1700.timer hydro-slot@1700.service",
+    "-                                  - Wed 2026-09-23 15:00:27 UTC 37s ago hydro-morning.timer    hydro-morning.service"
   ]
 }
