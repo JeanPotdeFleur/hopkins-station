@@ -2,7 +2,7 @@
 
 **Status page: https://JeanPotdeFleur.github.io/hopkins-station/**
 
-Open that page. It shows the view from the station as it was at 08:00 this
+Open that page.  It shows the view from the station as it was at 08:00 this
 morning, whether the station is running, and what it is scheduled to acquire
 today. Reading it needs no account.
 
