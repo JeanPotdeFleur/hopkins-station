@@ -2,7 +2,7 @@
 
 **Status page: https://JeanPotdeFleur.github.io/hopkins-station/**
 
-Open that page.  It shows the view from the station as it was at 08:00 this
+Open that page. It shows the view from the station as it was at 08:00 this
 morning, whether the station is running, and what it is scheduled to acquire
 today. Reading it needs no account.
 
@@ -43,3 +43,5 @@ edit them.
 `index.html` is the status page. Its source of truth is `site/index.html` in
 the [hydro_edge](https://github.com/JeanPotdeFleur/hydro_edge) repository: if
 it is ever broken here, copy it back from there.
+
+Test commit. 
