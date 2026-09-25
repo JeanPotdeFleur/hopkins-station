@@ -12,9 +12,9 @@
   "exposure_us": null,
   "_exposure_us": "100 to 20000, in microseconds, or null to keep the station's own value. The morning image on the status page shows what the scene called for. Raise it in fog, lower it in bright sun: the risk at the top is clipping the foam, which is the tracer.",
 
-  "note": "testing setting a planned date for aquisition",
+  "note": "",
   "_note": "Free text, why today is being treated this way. It is copied into the archive beside the frames and shown on the status page.",
 
-  "date": 2026-09-25,
+  "date": null,
   "_date": "Leave null for today. Set a future date, YYYY-MM-DD Pacific, only to prepare a plan a day or more ahead."
 }
