@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-05T15:01:03Z",
+  "generated_utc": "2026-10-05T16:50:09Z",
   "health": {
     "verdict": "nominal",
     "faults": [],
@@ -34,7 +34,7 @@
   },
   "plan": {
     "source": "default",
-    "date": "2026-10-04",
+    "date": "2026-10-05",
     "bursts": 2,
     "slots": [
       "1000",
@@ -42,7 +42,7 @@
     ],
     "exposure_us": null,
     "reason": "no plan set for today",
-    "resolved_utc": "2026-10-04T16:50:09Z"
+    "resolved_utc": "2026-10-05T16:50:09Z"
   },
   "settings": {
     "exposure_us": 6000,
@@ -52,9 +52,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 32.0,
+    "soc_temp_c": 33.1,
     "throttled": "0x0",
-    "uptime": "up 2 weeks, 2 days, 13 hours, 38 minutes",
+    "uptime": "up 2 weeks, 2 days, 15 hours, 27 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -151,9 +151,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Mon 2026-10-05 16:50:00 UTC 1h 48min Sun 2026-10-04 16:50:07 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Mon 2026-10-05 17:00:00 UTC 1h 58min Sun 2026-10-04 17:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Tue 2026-10-06 00:00:00 UTC       8h Mon 2026-10-05 00:00:00 UTC 15h ago hydro-burst-1700.timer hydro-slot@1700.service",
-    "-                                  - Mon 2026-10-05 15:00:27 UTC 38s ago hydro-morning.timer    hydro-morning.service"
+    "Mon 2026-10-05 17:00:00 UTC 9min Sun 2026-10-04 17:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Tue 2026-10-06 00:00:00 UTC   7h Mon 2026-10-05 00:00:00 UTC      16h ago hydro-burst-1700.timer hydro-slot@1700.service",
+    "Tue 2026-10-06 15:00:00 UTC  22h Mon 2026-10-05 15:00:27 UTC 1h 49min ago hydro-morning.timer    hydro-morning.service",
+    "-                              - Mon 2026-10-05 16:50:07 UTC       4s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
