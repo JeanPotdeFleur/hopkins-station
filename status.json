@@ -1,36 +1,36 @@
 {
-  "generated_utc": "2026-10-21T16:50:09Z",
+  "generated_utc": "2026-10-22T15:00:44Z",
   "health": {
     "verdict": "nominal",
     "faults": [],
     "notes": []
   },
   "morning": {
-    "captured_utc": "2026-10-21T15:01:02Z",
+    "captured_utc": "2026-10-22T15:00:44Z",
     "cameras": [
       {
         "serial": "24260192",
         "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
-        "gain_db": 17.9
+        "gain_db": 8.2
       },
       {
         "serial": "24260193",
         "frames": 52,
         "missed": 0,
         "exposure_us": 14997.0,
-        "gain_db": 17.9
+        "gain_db": 7.7
       }
     ],
     "radiometry": {
-      "sat_pct": 2.52,
-      "p50": 86,
-      "p999": 255,
+      "sat_pct": 0.01,
+      "p50": 61,
+      "p999": 213,
       "pmax": 255
     },
     "exposure_us": 14997.0,
-    "gain_db": 17.9
+    "gain_db": 8.2
   },
   "plan": {
     "source": "default",
@@ -52,26 +52,26 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 30.9,
+    "soc_temp_c": 29.8,
     "throttled": "0x0",
-    "uptime": "up 4 weeks, 4 days, 15 hours, 27 minutes",
+    "uptime": "up 4 weeks, 5 days, 13 hours, 37 minutes",
     "pps_pulsing": true
   },
   "storage": [
     {
       "mount": "/mnt/vault",
-      "free_gb": 2469.7,
-      "used_pct": 69
+      "free_gb": 2314.8,
+      "used_pct": 71
     },
     {
       "mount": "/mnt/vault2",
-      "free_gb": 2347.9,
-      "used_pct": 71
+      "free_gb": 2193.0,
+      "used_pct": 73
     }
   ],
   "bursts": [
     {
-      "id": "2026-10-21T00-00-06Z",
+      "id": "2026-10-22T00-00-06Z",
       "volume": "/mnt/vault2",
       "note": "",
       "slot": "1700",
@@ -79,8 +79,20 @@
       "frames": 4800,
       "target": 4800,
       "lost": 0,
+      "mbps": 64.499,
+      "ended_utc": "2026-10-22T00:40:08Z"
+    },
+    {
+      "id": "2026-10-21T17-00-06Z",
+      "volume": "/mnt/vault",
+      "note": "",
+      "slot": "1000",
+      "completed": true,
+      "frames": 4800,
+      "target": 4800,
+      "lost": 0,
       "mbps": 64.4964,
-      "ended_utc": "2026-10-21T00:40:08Z"
+      "ended_utc": "2026-10-21T17:40:08Z"
     },
     {
       "id": "2026-10-20T17-00-06Z",
@@ -129,31 +141,19 @@
       "lost": 0,
       "mbps": 64.4972,
       "ended_utc": "2026-10-17T17:40:08Z"
-    },
-    {
-      "id": "2026-10-16T17-00-06Z",
-      "volume": "/mnt/vault",
-      "note": "",
-      "slot": "1000",
-      "completed": true,
-      "frames": 4800,
-      "target": 4800,
-      "lost": 0,
-      "mbps": 64.498,
-      "ended_utc": "2026-10-16T17:40:08Z"
     }
   ],
   "verify": [
-    "[PASS] 2026-10-20T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
     "[PASS] 2026-10-21T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
+    "[PASS] 2026-10-22T00-00-06Z  4800/4800 frames  ring 1/60  64.5 MB/s  4020c9a",
     "",
-    "73/73 burst(s) passed"
+    "75/75 burst(s) passed"
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Wed 2026-10-21 17:00:00 UTC 9min Tue 2026-10-20 17:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Thu 2026-10-22 00:00:00 UTC   7h Wed 2026-10-21 00:00:00 UTC      16h ago hydro-burst-1700.timer hydro-slot@1700.service",
-    "Thu 2026-10-22 15:00:00 UTC  22h Wed 2026-10-21 15:00:27 UTC 1h 49min ago hydro-morning.timer    hydro-morning.service",
-    "-                              - Wed 2026-10-21 16:50:07 UTC       6s ago hydro-plan.timer       hydro-plan.service"
+    "Thu 2026-10-22 16:50:00 UTC 1h 49min Wed 2026-10-21 16:50:07 UTC 22h ago hydro-plan.timer       hydro-plan.service",
+    "Thu 2026-10-22 17:00:00 UTC 1h 59min Wed 2026-10-21 17:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Fri 2026-10-23 00:00:00 UTC       8h Thu 2026-10-22 00:00:00 UTC 15h ago hydro-burst-1700.timer hydro-slot@1700.service",
+    "-                                  - Thu 2026-10-22 15:00:09 UTC 41s ago hydro-morning.timer    hydro-morning.service"
   ]
 }
