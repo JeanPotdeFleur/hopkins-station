@@ -239,8 +239,8 @@ fetch("status.json" + q).then(r => r.json()).then(s => {
 // so the status callback above may call maybeRender before this point is
 // reached in source order.
 
-const SLOTS = { 0: [], 1: ["1000"], 2: ["1000", "1700"],
-                3: ["1000", "1300", "1700"] };
+const SLOTS = { 0: [], 1: ["1000"], 2: ["1000", "1400"],
+                3: ["1000", "1200", "1400"] };
 const slotTime = t => t.slice(0, 2) + ":" + t.slice(2);
 const pacific = d => new Intl.DateTimeFormat("en-CA", {
   timeZone: "America/Los_Angeles", year: "numeric",
@@ -326,7 +326,7 @@ function maybeRender() {
     lineEl.textContent = slotLine(SLOTS[2]);
     whyEl.textContent = "The plan in the repository will be refused, because "
       + livePlan.bad + ". The station will acquire two bursts at 10:00 and "
-      + "17:00.";
+      + "14:00.";
     return;
   }
 

@@ -23,7 +23,7 @@ changed by hand, and the button on the status page opens this file directly.
 | Field | What it does |
 | --- | --- |
 | `date` | Today's date, Pacific time. The plan is ignored unless this matches, so a plan nobody updated expires on its own. |
-| `bursts` | How many 40-minute bursts to acquire: 0, 1, 2 or 3. One is 10:00; two is 10:00 and 17:00; three is 10:00, 13:00 and 17:00. |
+| `bursts` | How many 40-minute bursts to acquire: 0, 1, 2 or 3. One is 10:00; two is 10:00 and 14:00; three is 10:00, 12:00 and 14:00. |
 | `exposure_us` | Optional. Exposure in microseconds, between 100 and 20000. Leave it out to keep the station's own setting. |
 | `note` | Optional free text. It is copied into the archive beside the frames. |
 
@@ -32,7 +32,7 @@ station reads the plan at 09:50 and does not look again, so a burst already
 under way is never altered by a late edit.
 
 If any field is missing, out of range or the file will not parse, the station
-acquires two bursts at 10:00 and 17:00 rather than nothing at all. The reason
+acquires two bursts at 10:00 and 14:00 rather than nothing at all. The reason
 it fell back is shown on the status page.
 
 ## What the station writes here
