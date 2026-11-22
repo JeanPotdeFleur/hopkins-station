@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-22T16:00:41Z",
+  "generated_utc": "2026-11-22T17:50:11Z",
   "health": {
     "verdict": "fault",
     "faults": [
@@ -35,7 +35,17 @@
     "exposure_us": 14997.0,
     "gain_db": 8.6
   },
-  "plan": {},
+  "plan": {
+    "source": "plan",
+    "date": "2026-11-22",
+    "date_from": "committed",
+    "bursts": 0,
+    "slots": [],
+    "exposure_us": null,
+    "reason": "accepted, dated by committed date",
+    "note": "Small waves today, no foam",
+    "resolved_utc": "2026-11-22T17:50:08Z"
+  },
   "settings": {
     "exposure_us": 6000,
     "gain_db": "0",
@@ -44,9 +54,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 23.8,
+    "soc_temp_c": 26.5,
     "throttled": "0x0",
-    "uptime": "up 1 day, 15 hours, 55 minutes",
+    "uptime": "up 1 day, 17 hours, 45 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -143,9 +153,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Sun 2026-11-22 17:50:00 UTC 1h 49min Sat 2026-11-21 17:50:06 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Sun 2026-11-22 18:00:00 UTC 1h 59min Sat 2026-11-21 18:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Sun 2026-11-22 22:00:00 UTC 5h 59min Sat 2026-11-21 22:00:00 UTC 18h ago hydro-burst-1400.timer hydro-slot@1400.service",
-    "-                                  - Sun 2026-11-22 16:00:06 UTC 36s ago hydro-morning.timer    hydro-morning.service"
+    "Sun 2026-11-22 18:00:00 UTC    9min Sat 2026-11-21 18:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Sun 2026-11-22 22:00:00 UTC 4h 9min Sat 2026-11-21 22:00:00 UTC      19h ago hydro-burst-1400.timer hydro-slot@1400.service",
+    "Mon 2026-11-23 16:00:00 UTC     22h Sun 2026-11-22 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
+    "-                                 - Sun 2026-11-22 17:50:06 UTC       6s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
