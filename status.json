@@ -1,17 +1,40 @@
 {
-  "generated_utc": "2026-11-21T17:50:11Z",
+  "generated_utc": "2026-11-22T00:31:21Z",
   "health": {
     "verdict": "fault",
     "faults": [
       "last burst 2026-11-21T01-00-06Z did not complete",
       "last burst shed 2849 frames"
     ],
-    "notes": [
-      "5 journal anomalies in 24 hours",
-      "no morning capture this cycle"
-    ]
+    "notes": []
   },
-  "morning": {},
+  "morning": {
+    "captured_utc": "2026-11-22T00:31:21Z",
+    "cameras": [
+      {
+        "serial": "24260192",
+        "frames": 52,
+        "missed": 0,
+        "exposure_us": 14997.0,
+        "gain_db": 16.2
+      },
+      {
+        "serial": "24260193",
+        "frames": 52,
+        "missed": 0,
+        "exposure_us": 14997.0,
+        "gain_db": 17.9
+      }
+    ],
+    "radiometry": {
+      "sat_pct": 0.11,
+      "p50": 94,
+      "p999": 255,
+      "pmax": 255
+    },
+    "exposure_us": 14997.0,
+    "gain_db": 16.2
+  },
   "plan": {
     "source": "plan",
     "date": "2026-11-21",
@@ -31,9 +54,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 27.1,
+    "soc_temp_c": 30.4,
     "throttled": "0x0",
-    "uptime": "up 17 hours, 45 minutes",
+    "uptime": "up 1 day, 26 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -128,11 +151,11 @@
     "",
     "77/78 burst(s) passed"
   ],
-  "journal_anomalies_24h": 5,
+  "journal_anomalies_24h": 0,
   "timers": [
-    "Sat 2026-11-21 18:00:00 UTC    9min -                                      - hydro-burst-1000.timer hydro-slot@1000.service",
-    "Sat 2026-11-21 22:00:00 UTC 4h 9min -                                      - hydro-burst-1400.timer hydro-slot@1400.service",
-    "Sun 2026-11-22 16:00:00 UTC     22h Sat 2026-11-21 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
-    "-                                 - Sat 2026-11-21 17:50:06 UTC       6s ago hydro-plan.timer       hydro-plan.service"
+    "Sun 2026-11-22 16:00:00 UTC  15h Sat 2026-11-21 16:00:06 UTC       8h ago hydro-morning.timer    hydro-morning.service",
+    "Sun 2026-11-22 17:50:00 UTC  17h Sat 2026-11-21 17:50:06 UTC       6h ago hydro-plan.timer       hydro-plan.service",
+    "Sun 2026-11-22 18:00:00 UTC  17h Sat 2026-11-21 18:00:00 UTC       6h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Sun 2026-11-22 22:00:00 UTC  21h Sat 2026-11-21 22:00:00 UTC 2h 31min ago hydro-burst-1400.timer hydro-slot@1400.service"
   ]
 }
