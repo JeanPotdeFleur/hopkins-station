@@ -1,10 +1,11 @@
 {
-  "generated_utc": "2026-11-23T16:00:41Z",
+  "generated_utc": "2026-11-23T17:50:11Z",
   "health": {
     "verdict": "fault",
     "faults": [
       "last burst 2026-11-21T01-00-06Z did not complete",
-      "last burst shed 2849 frames"
+      "last burst shed 2849 frames",
+      "no burst in the last 36 hours"
     ],
     "notes": []
   },
@@ -37,14 +38,16 @@
   },
   "plan": {
     "source": "plan",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "date_from": "committed",
-    "bursts": 0,
-    "slots": [],
+    "bursts": 1,
+    "slots": [
+      "1000"
+    ],
     "exposure_us": null,
     "reason": "accepted, dated by committed date",
-    "note": "Small waves today, no foam",
-    "resolved_utc": "2026-11-22T17:50:08Z"
+    "note": "decent waves today, just going for one burst",
+    "resolved_utc": "2026-11-23T17:50:07Z"
   },
   "settings": {
     "exposure_us": 6000,
@@ -54,9 +57,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 24.3,
+    "soc_temp_c": 30.9,
     "throttled": "0x0",
-    "uptime": "up 2 days, 15 hours, 55 minutes",
+    "uptime": "up 2 days, 17 hours, 45 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -153,9 +156,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Mon 2026-11-23 17:50:00 UTC 1h 49min Sun 2026-11-22 17:50:06 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Mon 2026-11-23 18:00:00 UTC 1h 59min Sun 2026-11-22 18:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Mon 2026-11-23 22:00:00 UTC 5h 59min Sun 2026-11-22 22:00:00 UTC 18h ago hydro-burst-1400.timer hydro-slot@1400.service",
-    "-                                  - Mon 2026-11-23 16:00:06 UTC 36s ago hydro-morning.timer    hydro-morning.service"
+    "Mon 2026-11-23 18:00:00 UTC    9min Sun 2026-11-22 18:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Mon 2026-11-23 22:00:00 UTC 4h 9min Sun 2026-11-22 22:00:00 UTC      19h ago hydro-burst-1400.timer hydro-slot@1400.service",
+    "Tue 2026-11-24 16:00:00 UTC     22h Mon 2026-11-23 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
+    "-                                 - Mon 2026-11-23 17:50:06 UTC       6s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
