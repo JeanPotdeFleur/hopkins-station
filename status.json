@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-24T16:00:41Z",
+  "generated_utc": "2026-11-24T17:50:11Z",
   "health": {
     "verdict": "nominal",
     "faults": [],
@@ -34,16 +34,14 @@
   },
   "plan": {
     "source": "plan",
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "date_from": "committed",
-    "bursts": 1,
-    "slots": [
-      "1000"
-    ],
+    "bursts": 0,
+    "slots": [],
     "exposure_us": null,
     "reason": "accepted, dated by committed date",
-    "note": "decent waves today, just going for one burst",
-    "resolved_utc": "2026-11-23T17:50:07Z"
+    "note": "small waves, waiting for larger swells incoming later this week.",
+    "resolved_utc": "2026-11-24T17:50:08Z"
   },
   "settings": {
     "exposure_us": 6000,
@@ -53,9 +51,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 26.5,
+    "soc_temp_c": 32.5,
     "throttled": "0x0",
-    "uptime": "up 3 days, 15 hours, 55 minutes",
+    "uptime": "up 3 days, 17 hours, 45 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -152,9 +150,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Tue 2026-11-24 17:50:00 UTC 1h 49min Mon 2026-11-23 17:50:06 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Tue 2026-11-24 18:00:00 UTC 1h 59min Mon 2026-11-23 18:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Tue 2026-11-24 22:00:00 UTC 5h 59min Mon 2026-11-23 22:00:00 UTC 18h ago hydro-burst-1400.timer hydro-slot@1400.service",
-    "-                                  - Tue 2026-11-24 16:00:06 UTC 37s ago hydro-morning.timer    hydro-morning.service"
+    "Tue 2026-11-24 18:00:00 UTC    9min Mon 2026-11-23 18:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Tue 2026-11-24 22:00:00 UTC 4h 9min Mon 2026-11-23 22:00:00 UTC      19h ago hydro-burst-1400.timer hydro-slot@1400.service",
+    "Wed 2026-11-25 16:00:00 UTC     22h Tue 2026-11-24 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
+    "-                                 - Tue 2026-11-24 17:50:06 UTC       6s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
