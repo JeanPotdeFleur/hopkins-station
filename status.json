@@ -1,8 +1,10 @@
 {
-  "generated_utc": "2026-11-25T16:00:41Z",
+  "generated_utc": "2026-11-25T17:50:11Z",
   "health": {
-    "verdict": "nominal",
-    "faults": [],
+    "verdict": "fault",
+    "faults": [
+      "no burst in the last 36 hours"
+    ],
     "notes": []
   },
   "morning": {
@@ -34,14 +36,18 @@
   },
   "plan": {
     "source": "plan",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "date_from": "committed",
-    "bursts": 0,
-    "slots": [],
+    "bursts": 3,
+    "slots": [
+      "1000",
+      "1200",
+      "1400"
+    ],
     "exposure_us": null,
     "reason": "accepted, dated by committed date",
-    "note": "small waves, waiting for larger swells incoming later this week.",
-    "resolved_utc": "2026-11-24T17:50:08Z"
+    "note": "Spectacular day of waves, king tide and big swell. 3 bursts to capture full tide cycle and large waves with (hopefully) some good foam!",
+    "resolved_utc": "2026-11-25T17:50:08Z"
   },
   "settings": {
     "exposure_us": 6000,
@@ -51,9 +57,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 29.8,
+    "soc_temp_c": 37.0,
     "throttled": "0x0",
-    "uptime": "up 4 days, 15 hours, 55 minutes",
+    "uptime": "up 4 days, 17 hours, 45 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -150,9 +156,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Wed 2026-11-25 17:50:00 UTC 1h 49min Tue 2026-11-24 17:50:06 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Wed 2026-11-25 18:00:00 UTC 1h 59min Tue 2026-11-24 18:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Wed 2026-11-25 22:00:00 UTC 5h 59min Tue 2026-11-24 22:00:00 UTC 18h ago hydro-burst-1400.timer hydro-slot@1400.service",
-    "-                                  - Wed 2026-11-25 16:00:06 UTC 36s ago hydro-morning.timer    hydro-morning.service"
+    "Wed 2026-11-25 18:00:00 UTC    9min Tue 2026-11-24 18:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Wed 2026-11-25 22:00:00 UTC 4h 9min Tue 2026-11-24 22:00:00 UTC      19h ago hydro-burst-1400.timer hydro-slot@1400.service",
+    "Thu 2026-11-26 16:00:00 UTC     22h Wed 2026-11-25 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
+    "-                                 - Wed 2026-11-25 17:50:06 UTC       6s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
