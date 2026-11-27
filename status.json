@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-27T16:00:42Z",
+  "generated_utc": "2026-11-27T17:50:07Z",
   "health": {
     "verdict": "nominal",
     "faults": [],
@@ -33,18 +33,16 @@
     "gain_db": 0.0
   },
   "plan": {
-    "source": "plan",
-    "date": "2026-11-26",
-    "date_from": "committed",
+    "source": "default",
+    "date": "2026-11-27",
     "bursts": 2,
     "slots": [
       "1000",
       "1400"
     ],
     "exposure_us": null,
-    "reason": "accepted, dated by committed date",
-    "note": "normal day",
-    "resolved_utc": "2026-11-26T17:50:08Z"
+    "reason": "no plan set for today",
+    "resolved_utc": "2026-11-27T17:50:07Z"
   },
   "settings": {
     "exposure_us": 6000,
@@ -54,9 +52,9 @@
   "station": {
     "clock_synchronised": true,
     "governor": "performance",
-    "soc_temp_c": 24.9,
+    "soc_temp_c": 30.4,
     "throttled": "0x0",
-    "uptime": "up 6 days, 15 hours, 55 minutes",
+    "uptime": "up 6 days, 17 hours, 44 minutes",
     "pps_pulsing": true
   },
   "storage": [
@@ -153,9 +151,9 @@
   ],
   "journal_anomalies_24h": 0,
   "timers": [
-    "Fri 2026-11-27 17:50:00 UTC 1h 49min Thu 2026-11-26 17:50:06 UTC 22h ago hydro-plan.timer       hydro-plan.service",
-    "Fri 2026-11-27 18:00:00 UTC 1h 59min Thu 2026-11-26 18:00:00 UTC 22h ago hydro-burst-1000.timer hydro-slot@1000.service",
-    "Fri 2026-11-27 22:00:00 UTC 5h 59min Thu 2026-11-26 22:00:00 UTC 18h ago hydro-burst-1400.timer hydro-slot@1400.service",
-    "-                                  - Fri 2026-11-27 16:00:06 UTC 37s ago hydro-morning.timer    hydro-morning.service"
+    "Fri 2026-11-27 18:00:00 UTC    9min Thu 2026-11-26 18:00:00 UTC      23h ago hydro-burst-1000.timer hydro-slot@1000.service",
+    "Fri 2026-11-27 22:00:00 UTC 4h 9min Thu 2026-11-26 22:00:00 UTC      19h ago hydro-burst-1400.timer hydro-slot@1400.service",
+    "Sat 2026-11-28 16:00:00 UTC     22h Fri 2026-11-27 16:00:06 UTC 1h 50min ago hydro-morning.timer    hydro-morning.service",
+    "-                                 - Fri 2026-11-27 17:50:06 UTC       3s ago hydro-plan.timer       hydro-plan.service"
   ]
 }
